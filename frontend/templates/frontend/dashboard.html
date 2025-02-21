@@ -1,0 +1,18 @@
+{% load static %}
+<!-- Add this line -->
+{% extends 'frontend/base.html' %} 
+{% block content %}
+<h2>Dashboard</h2>
+<div class="dashboard">
+    <img
+        src="{% static 'frontend/images/age_vs_fraud.png' %}"
+        alt="Age vs Fraud"
+        class="fade-in"
+    />
+    <img
+        src="{% static 'frontend/images/amount_vs_fraud.png' %}"
+        alt="Amount vs Fraud"
+        class="fade-in"
+    />
+</div>
+{% endblock %}

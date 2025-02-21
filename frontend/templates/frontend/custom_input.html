@@ -1,0 +1,12 @@
+{% extends 'frontend/base.html' %} {% block content %}
+<h2>Custom Input</h2>
+<form method="post">
+    {% csrf_token %}
+    <label for="amount">Amount:</label>
+    <input type="number" name="amount" required />
+    <label for="age">Age:</label>
+    <input type="number" name="age" required />
+    <button type="submit" class="button-animate">Predict</button>
+</form>
+<div id="prediction"></div>
+{% endblock %}
