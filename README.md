@@ -25,8 +25,8 @@ deep learning) for continuous fraud scoring.
 
 ### References:
 
-§ Kaggle Credit Card Fraud Detection Dataset
+§ [Kaggle Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 
-§ PCI DSS Guidelines
+§ [PCI DSS Guidelines](https://www.pcisecuritystandards.org/)
 
-§ Stripe API Docs for Payment Data (example reference)
+§ [Stripe API Docs for Payment Data (example reference)](https://stripe.com/docs/api)
