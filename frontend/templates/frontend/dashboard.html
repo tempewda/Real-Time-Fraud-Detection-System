@@ -1,9 +1,10 @@
+{% extends 'frontend/base.html' %} 
 {% load static %}
 <!-- Add this line -->
-{% extends 'frontend/base.html' %} 
 {% block content %}
-<h2>Dashboard</h2>
-<div class="dashboard">
+<h1>Welcome to the <span class="highlight-text">Fraud Detection System</span></h1>
+<p>Use the top bar to navigate through the app.</p>
+<!-- <div class="dashboard">
     <img
         src="{% static 'frontend/images/age_vs_fraud.png' %}"
         alt="Age vs Fraud"
@@ -14,5 +15,5 @@
         alt="Amount vs Fraud"
         class="fade-in"
     />
-</div>
+</div> -->
 {% endblock %}
