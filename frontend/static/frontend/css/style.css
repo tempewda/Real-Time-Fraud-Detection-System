@@ -117,7 +117,7 @@ h1, h2 {
 
 .highlight-text {
     color: #716EF1;
-    font-weight: 600; /* Semi-bold */
+    font-weight: 700; /* Bold */
     /* font-weight: 700; for bold */
 }
 
@@ -125,21 +125,21 @@ h1, h2 {
 form {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     background-color: #ecf0f1;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 form label {
-    font-weight: 700;
+    font-weight: 500;
     color: #716EF1;
 }
 
 form input {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0;
     border: 1px solid #bdc3c7;
     border-radius: 5px;
 }
@@ -148,7 +148,7 @@ form button {
     background-color: #716EF1;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;

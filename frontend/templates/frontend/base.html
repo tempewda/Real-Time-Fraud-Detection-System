@@ -17,13 +17,9 @@
             <!-- Navigation links with left margin -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-3">
+                  
                     <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">
-                            <i class="fas fa-home me-2"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'dashboard' %}active{% endif %}" href="{% url 'dashboard' %}">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'dashboard' %}active{% endif %}" href="{% url 'home' %}">
                             <i class="fas fa-chart-line me-2"></i> Dashboard
                         </a>
                     </li>
@@ -41,6 +37,11 @@
                         <a class="nav-link {% if request.resolver_match.url_name == 'shap_explanation' %}active{% endif %}" href="{% url 'shap_explanation' %}">
                             <i class="fas fa-chart-pie me-2"></i> SHAP
                         </a>
+                    </li class="nav-item">
+
+                        <a class=nav-link {% if request.resolver_match.url_name == 'shap_explanation' %}active{% endif %}" href="{% url 'shap_explanation' %}">
+                            <i class="fas fa-chart-line"></i> ANALYSIS
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +52,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 fade-in main-content"> <!-- Added .main-content class -->
-                {% block content %}{% endblock %}
+                {% block content %}
+                {% endblock %}
             </div>
         </div>
     </div>

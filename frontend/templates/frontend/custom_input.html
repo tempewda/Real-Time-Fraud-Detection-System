@@ -1,11 +1,16 @@
 {% extends 'frontend/base.html' %} {% block content %}
-<h2>Custom Input</h2>
 <form method="post">
     {% csrf_token %}
-    <label for="amount">Amount:</label>
+    <label for="amount">Amount(in lakhs):</label>
     <input type="number" name="amount" required />
-    <label for="age">Age:</label>
-    <input type="number" name="age" required />
+    <label for="city">City:</label>
+    <input type="text" name="city" required />
+    <label for="job">Job:</label>
+    <input type="text" name="job" required />
+
+    <label for="frequency">Frequency:</label>
+    <input type="text" name="frequency" required />
+
     <button type="submit" class="button-animate">Predict</button>
 </form>
 <div id="prediction"></div>
